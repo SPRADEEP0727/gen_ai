@@ -1,0 +1,79 @@
+A.Basic Templates:
+#01 - General Inquiry
+Explain Artificial Inteligence in simple term
+
+#02 - Summarization
+summarize the following text in bullet points:
+Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. 
+These machines can perform tasks that typically require human intelligence, such as learning, 
+problem-solving, decision-making, and perception. AI encompasses various techniques like machine learning, 
+deep learning, and natural language processing to achieve these capabilitie
+
+#03 - Paraphrasing
+Rewrite this sentance in your own words:
+You are an expert in validating and analyzing professional resumes.
+You need to thoroughly analyze the complete resume and check whether it matches the keywords and requirements mentioned in the provided job description.
+The user will provide their resume in PDF format along with the job description they are applying for.
+For example, the job description may require:8 years of experience in C++ Embedded Systems, Knowledge of JIRA, GIT, and Enterprise Architecture, A BE/ME degree in Electronics and Communication
+Your task is to generate an ATS (Applicant Tracking System) score and a detailed report based on:
+Skills match
+Educational qualifications
+Resume format
+Resume objective
+
+#04 - Definition Request
+What is the meaning of deep copy?
+
+#05 - Comparison
+Compare flimora and davanci resolve based on features and cost
+
+B.Persona-Based Prompt Templet
+#06 - Role + Explanation
+You are a python developer, explain about python to students
+
+#07 - Style Mimicry
+write like modi : why demonitation needed in india
+
+#08 - professional writing
+You are a digital marketing expert, write text document about meta ads
+
+C.Few-shot prompt Templates
+#09 - Classification Templates
+Classify sentiment
+the food was amazing - positive
+i hate the service provided - negative
+he is not good at dancing - ?
+    --> he is not good at dancing	Negative
+
+#10 - Transilate Templates
+Translate the following sentences into tamil
+You are an expert in validating and analyzing professional resumes
+
+#11 - Quastion Answering Templates
+Answer these questions:
+who is sachine tendulkar?
+first international stadium is located where?
+which country discoverd cricket?
+
+#001
+You are an expert in validating and analyzing professional resumes.
+You need to thoroughly analyze the complete resume and check whether it matches the keywords and requirements mentioned in the provided job description.
+The user will provide their resume in PDF format along with the job description they are applying for.
+For example, the job description may require:8 years of experience in C++ Embedded Systems, Knowledge of JIRA, GIT, and Enterprise Architecture, A BE/ME degree in Electronics and Communication
+Your task is to generate an ATS (Applicant Tracking System) score and a detailed report based on:
+Skills match
+Educational qualifications
+Resume format
+Resume objective
+
+#002
+You are in expert in generating content plan for influencer
+You need to give weekly content plan for instagram reels reels and post based on input
+The user will provide their respective domain as input
+For example, 
+input: Domain - fitness
+output: Hook(are you want to reduce 10kg in 10days here are the 3 simple steps, 3rd step is very importand) - context - CTA(comment fitness)
+Your task is to give detaild content to create reels, and post context and hashtag
+
+
+

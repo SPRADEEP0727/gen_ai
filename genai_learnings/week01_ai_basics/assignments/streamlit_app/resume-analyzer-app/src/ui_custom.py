@@ -22,39 +22,107 @@ def set_custom_background(image_path: str):
 
 def set_custom_title():
     st.markdown("""
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
-
         <style>
-        .title-container {
+            /* Full-width navbar (independent of Streamlit container) */
+            .custom-navbar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                background-color: #ffffff;
+                padding: 16px 200px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid #eee;
+                z-index: 999;
+            }
+
+            .custom-navbar .left {
+                font-size: 30px;
+                font-weight: bold;
+                color: #2563EB;
+                font-family: 'Segoe UI', sans-serif;
+
+            }
+
+            .custom-navbar .right a {
+                margin-left: 24px;
+                text-decoration: none;
+                font-size: 18px;
+                color: #1f2937;
+                font-family: 'Segoe UI', sans-serif;
+            }
+
+            .custom-navbar .right a.register {
+                background-color: #EF4444;
+                color: white;
+                padding: 8px 16px;
+                border-radius: 6px;
+                font-weight: 600;
+            }
+
+            /* Add padding to top so Streamlit content doesn't overlap with navbar */
+            .block-container {
+                padding-top: 80px !important;
+            }
+        </style>
+
+        <div class="custom-navbar">
+            <div class="left">ResumeGenius.ai</div>
+            <div class="right">
+                <a href="#">Services</a>
+                <a href="#" class="register">Register</a>
+                <a href="#" style="color:#2563EB; font-weight:600;">Login</a>
+            </div>
+        </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+        <style>
+        .full-width-banner {
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            margin-top: 2.5vw;
+            margin-bottom: 0.5vw;
+            width: 100vw;
+            background: transparent;
             text-align: center;
-            margin-bottom: 5px;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 0px 0;
         }
 
-        .title-glow {
-            font-size: 60px;
+        .full-width-banner p {
+            color: black;
+            font-size: 40px;
             font-weight: bold;
-            color: #00FFFF;
-            font-family: 'Orbitron', sans-serif;
-            text-shadow:
-                0 0 1px #00FFFF,
-                0 0 3px #00FFFF,
-                0 0 5px #00FFFF;
+            font-family: "Segoe UI", sans-serif;
+            margin: 0;
         }
         </style>
 
-        <div class="title-container">
-            <span class="title-glow">ResumeGenius.ai</span>
+        <div class='full-width-banner'>
+            <p>Your Next Job Starts with a Smarter Resume</p>
         </div>
     """, unsafe_allow_html=True)
 
 
+
     st.markdown("""
-        <p style='text-align:center; 
-            color:lightgray;
-            font-size:20px; 
-            margin-bottom: 40px;'>
-            Optimize Your Resume. Impress Every Recruiter
-        </p>
-    """, unsafe_allow_html=True)
+    <p style='text-align:center; 
+        color:#2563EB;
+        font-size:20px; 
+        font-weight:bold;
+        margin-top: 0vw; 
+        font-family: "Segoe UI", sans-serif;
+        margin-bottom: 3vw;'>
+        Stand Out . Get Noticed . Get Hired   
+    </p>
+""", unsafe_allow_html=True)
 
     
